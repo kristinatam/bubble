@@ -1,0 +1,44 @@
+p {
+    text-align: center;
+    padding-top: 50px;
+}
+button {
+    background: url("yesno.png") no-repeat;
+    display: block;
+}
+.yes {
+    width: 225px;
+    height: 112px;
+    background-position: 0 0;
+}
+.no {
+    width: 225px;
+    height: 112px;
+    background-position: 0 -112px;
+    visibility: hidden;
+}
+p.speech {
+    position: relative;
+    width: 250px;
+    height: 150px;
+    border: #49E27C solid 5px;
+    background: #49E27C;
+    border-radius: 40px;
+    margin: auto;
+    vertical-align: middle;
+}
+p.speech:after {
+    content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #49E27C;
+	border-left: 0;
+	margin-top: -20px;
+	margin-left: -20px;
+}
+
+
